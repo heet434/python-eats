@@ -4,8 +4,10 @@ This folder contains the implementation of NEAT algorithm through multiple gener
 We use [neat-python](https://github.com/CodeReclaimers/neat-python) for evolution of the neural network and [pygame](https://github.com/pygame/pygame) for the UI of the snakes.<br/>
 Here is a demo of the best and the last surviving snake from generation 16, that easily scored beyond 50.</br>
 
-https://github.com/heet434/python-eats/assets/118350153/b01bf0d9-d8d5-4a1d-bd8d-6265104a0d09
+<div style="text-align:center">
 
+https://github.com/heet434/python-eats/assets/118350153/b01bf0d9-d8d5-4a1d-bd8d-6265104a0d09
+</div>
 ---
 ### Neural Network: Input and Outputs
 The neural network is initialized with 9 input neurons and 3 output neurons. There are 0 hidden neurons initially.<br/>
