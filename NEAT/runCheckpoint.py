@@ -1,7 +1,4 @@
 import os
-import neat
-import time
-import random
 
 import game
 

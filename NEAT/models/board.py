@@ -1,10 +1,4 @@
 import pygame as pg # type: ignore
-import numpy as np
-
-import snake as sn
-import food as fd
-
-
 
 class Board():
     def __init__(self, width: int, height: int) -> None:
