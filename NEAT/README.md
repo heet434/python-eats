@@ -18,6 +18,11 @@ The population size is set to 100. As the performance of NEAT algorithm depends 
 We have set the elitism, both species and for reproduction to 3, and the survival threshold to 0.3. ReLU Activation function is used for the neurons. Other specifications can be seen in the config-feedforward.txt file.<br/>
 The fitness function we use gives +50 for eating food, -8 for dying due to wall or itself, -10 for running out of life (initial life is set to 200 and decrements on each step, and is increased by 100 on eating food), -5 if the output by neural network causes snake to die.
 
+<br/>
+When you run "game.py", this is how it will look initially as you are viewing all the snakes from this generation at once. Then gradually snakes will die due to various reasons one by one and the fittest snakes of the generation will clearly emerge out. 
+<img width="301" alt="Screenshot 2024-06-13 at 11 51 28 PM" src="https://github.com/heet434/python-eats/assets/118350153/c098fa12-5fd7-4da7-9ca3-31f0711a966a">
+
+
 ---
 ### Starting the generations
 To start from generation 0 and view the evolution process of all the snakes, just run the "game.py" program. We have set the default board size as 300x300. </br>
