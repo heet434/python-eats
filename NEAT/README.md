@@ -4,9 +4,7 @@ This folder contains the implementation of NEAT algorithm through multiple gener
 We use [neat-python](https://github.com/CodeReclaimers/neat-python) for evolution of the neural network and [pygame](https://github.com/pygame/pygame) for the UI of the snakes.<br/>
 Here is a demo of the best and the last surviving snake from generation 16, that easily scored beyond 50.</br>
 
-<div align="center">
-  https://github.com/heet434/python-eats/assets/118350153/b01bf0d9-d8d5-4a1d-bd8d-6265104a0d09
-</div>
+https://github.com/heet434/python-eats/assets/118350153/b01bf0d9-d8d5-4a1d-bd8d-6265104a0d09
 
 ---
 ### Neural Network: Input and Outputs
@@ -25,7 +23,7 @@ The fitness function we use gives +50 for eating food, -8 for dying due to wall 
 To start from generation 0 and view the evolution process of all the snakes, just run the "game.py" program. We have set the default board size as 300x300. </br>
 We ran the evolution process till 20 generations and stored the genomes at some checkpoints (i.e. some generations). They are stored as binary pickle files in the checkpoints folder. To load up a particular generation and start the process from there, use the "runCheckpoint.py" program and set your saved generation number in "runCheckpointNo" variable. Also note that every time you run the process of evolution, the checkpoints at particular generations will be rewritten. <br/>
 Here is a graph of fitness vs generations:<br/>
-<img width="637" alt="population_fitness" src="https://github.com/heet434/python-eats/assets/118350153/7677f9e8-48cf-48f6-ace1-b67427f68dd1">
+<img align = "center" width="637" alt="population_fitness" src="https://github.com/heet434/python-eats/assets/118350153/7677f9e8-48cf-48f6-ace1-b67427f68dd1">
 
 
 
