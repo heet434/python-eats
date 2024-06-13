@@ -1,8 +1,4 @@
 import pygame as pg # type: ignore
-import numpy as np # type: ignore
-
-# define color of snake
-green = (0, 255, 0)
 
 class Snake():
     def __init__(self, x: int, y: int, life: int, color) -> None:
@@ -18,13 +14,9 @@ class Snake():
         self.life = life
 
     def draw(self, screen) -> None:
-       # draw snake, each block should be a shade lighter than the previous one
+       
         for x, y in self.body:
             pg.draw.rect(screen, self.color, (x, y, self.cell, self.cell))
-        # for i in range(len(self.body)):
-        #     pg.draw.rect(screen, self.color, (self.body[i][0], self.body[i][1], self.cell, self.cell))
-        #     if(self.color[0]> 20 and self.color[1] > 20 and self.color[2] > 20):
-        #         self.color = (self.color[0] - 20, self.color[1] - 20, self.color[2] - 20)
         
     def change_direction(self, direction: str) -> None:
         if direction == 'n' and self.direction != 's':
@@ -72,7 +64,7 @@ class Snake():
         self.body.insert(0, (self.x, self.y))
         self.body.pop()
         
-    def take_inputs(self, food, width, height) -> np.array:
+    def take_inputs(self, food, width, height) -> list:
         out = [
             0, 0, 0, # if food is in front, left or right
             0, 0, 0, # if the snake can move forward, left or right (no wall)
@@ -169,32 +161,5 @@ class Snake():
             out[8] = 1
         elif self.direction == 'e' and (self.x, self.y + self.cell) not in self.body:
             out[8] = 1
-                    
-        # # calculate distance to food in 8 directions
-        # # n s w e nw ne sw se
-        # # n and s
-        # diff_y = self.y - food.y
-        # if diff_y > 0:
-        #     out[6] = diff_y
-        # else :
-        #     out[7] = -diff_y
-        # # w and e
-        # diff_x = self.x - food.x
-        # if diff_x > 0:
-        #     out[8] = diff_x
-        # else :
-        #     out[9] = -diff_x
-            
-        # # diagonal manhattan distances
-        # diff_x = self.x - food.x
-        # diff_y = self.y - food.y
-        # if diff_x > 0 and diff_y >0 :   
-        #     out[10] = diff_x + diff_y
-        # elif diff_x > 0 and diff_y < 0 :
-        #     out[12] = diff_x - diff_y
-        # elif diff_x < 0 and diff_y > 0 :
-        #     out[11] = -diff_x + diff_y
-        # elif diff_x < 0 and diff_y < 0 :
-        #     out[13] = -diff_x - diff_y
             
         return out

@@ -1,6 +1,3 @@
-import pygame as pg # type: ignore
-import numpy as np
-
 import snake as sn
 import food as fd
 
