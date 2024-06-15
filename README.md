@@ -7,8 +7,8 @@ NEAT (NeuroEvolution of Augmenting Topologies) is a genetic algorithm that evolv
 
 #### Key Characteristics:
 
-Initial Population: 100
-Generations to Achieve Score of 75: 15
+Initial Population: 100 <br/>
+Generations to Achieve Score of 75: 15 <br/>
 Library Used: neat-python
 
 ### Deep Q-Learning
@@ -16,7 +16,7 @@ Deep Q-Learning is a reinforcement learning algorithm that combines Q-Learning w
 
 #### Key Characteristics:
 
-Iterations to Achieve Score of 75: 100
+Iterations to Achieve Score of 75: 100 <br/>
 Library Used: PyTorch
 
 ----
