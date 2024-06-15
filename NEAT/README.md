@@ -25,7 +25,7 @@ When you run "game.py", this is how it will look initially as you are viewing al
 
 ---
 ### Starting the generations
-To start from generation 0 and view the evolution process of all the snakes, just run the "game.py" program. We have set the default board size as 300x300. </br>
+To start from generation 0 and view the evolution process of all the snakes, just run the "game.py" program. We have set the default board size as 300x300 pixels, i.e. 30x30 blocks. </br>
 We ran the evolution process till 20 generations and stored the genomes at some checkpoints (i.e. some generations). They are stored as binary pickle files in the checkpoints folder. To load up a particular generation and start the process from there, use the "runCheckpoint.py" program and set your saved generation number in "runCheckpointNo" variable. Also note that every time you run the process of evolution, the checkpoints at particular generations will be rewritten. <br/>
 Here is a graph of fitness vs generations:<br/>
 <img align = "center" width="637" alt="population_fitness" src="https://github.com/heet434/python-eats/assets/118350153/7677f9e8-48cf-48f6-ace1-b67427f68dd1">
