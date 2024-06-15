@@ -24,6 +24,13 @@ When you run "game.py", this is how it will look initially as you are viewing al
 
 
 ---
+### Setup
+1. Clone the repository. <br/>
+2. Install the requirements using ``pip install -r requirements.txt``
+3. Start the generational training as mentioned in the next section by using ``python game.py``
+
+
+--- 
 ### Starting the generations
 To start from generation 0 and view the evolution process of all the snakes, just run the "game.py" program. We have set the default board size as 300x300 pixels, i.e. 30x30 blocks. </br>
 We ran the evolution process till 20 generations and stored the genomes at some checkpoints (i.e. some generations). They are stored as binary pickle files in the checkpoints folder. To load up a particular generation and start the process from there, use the "runCheckpoint.py" program and set your saved generation number in "runCheckpointNo" variable. Also note that every time you run the process of evolution, the checkpoints at particular generations will be rewritten. <br/>
