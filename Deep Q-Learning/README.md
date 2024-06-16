@@ -18,7 +18,8 @@ This project involves the development of a classic Snake game using Pygame, foll
 - gameAI.py: Contains the implementation of the Snake game using Pygame for the AI model to play on.
 
 ## AI training...
-![training_video](readme.mp4)
+[![training_video](readme.mp4)](https://github.com/heet434/python-eats/assets/134161288/05853312-9492-4710-9c75-0ecb694277f8
+)
 
 ## Plot obtained after training for 500 games
 ![plot_photo](image.png)
