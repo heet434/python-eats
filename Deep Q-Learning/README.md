@@ -18,6 +18,13 @@ This project involves the development of a classic Snake game using Pygame, foll
 - gameAI.py: Contains the implementation of the Snake game using Pygame for the AI model to play on.
 
 ## AI training...
+- Training Step (train_step): Handles the training logic:
+- Converts input data to PyTorch tensors.
+- Handles batch inputs by ensuring the input tensors have the correct dimensions.
+- Predicts Q-values for the current state.
+- Updates Q-values based on the reward and the maximum Q-value of the next state.
+- Computes the loss and backpropagates the error to update the network weights.
+
 [![training_video](readme.mp4)](https://github.com/heet434/python-eats/assets/134161288/05853312-9492-4710-9c75-0ecb694277f8
 )
 
